@@ -1,0 +1,32 @@
+ANOTACION DE CHEN
+
+==== Entidad ====
+---- Nombre de la tabla ejemplo persona
+---- en la anotacion de chen encerrada con un cuadrado
+
+---- Contienen
+===================================================================
+==== Atributos Comunes == representados por un obalo
+
+==== Atributos Simples ====
+---- son atributos que simplementen contienen atributos unicos
+
+==== Atributos compuestos
+---- por ejemplo outfit de una persona
+---- que puede tener camisa pantalon y zapatos
+===================================================================
+
+
+==== Atributos Multivalor == representados por dos obalos
+---- como ejemplo el outfit es multivalor y vehiculos si tiene
+
+===================================================================
+
+
+==== Atributos derivados == representados por un obalo punteado 
+---- ejemplo la edad de una persona que la puedo obtener por la fecha de naciemiento 
+ 
+
+==== Atributo Unico Key == representada por una ralla
+---- Forma de hacer que algo sea unico
+
