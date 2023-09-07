@@ -3,4 +3,4 @@
 select * from public.usuarios
 select nombre_usuario as nombre, apellido_usuaio as apellido from public.usuarios 
 
-select precion, precion * 2 as precio from productos
+select precio, precio * 2 as precio from productos
