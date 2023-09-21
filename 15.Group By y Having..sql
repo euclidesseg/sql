@@ -18,7 +18,7 @@ having avg(price) > 21 ---aplicamos filtro con having sobre un grupo
 
 ---- ahora vamos a seleccionar el registro de ventas
 select productID, sum(quantity)AS TOTAL from orderdetails
-group by productID
+group by productID --- Todas las cantidades con el mismo id las sumara y las agrupara
 having sum(quantity)< 50 ---agrego esto porque digamos que quiero sacar los productos que vendan menos de 50
 order by total asc
 
