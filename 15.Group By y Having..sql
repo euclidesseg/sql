@@ -5,15 +5,21 @@
 ---- sumara todos los productos de una categoria y sacara su promedio
 select categoryid, avg(price) as promedio_productos from Products group by categoryid
 
----- ahora estoy seleccionando el promedio de los productos por su categoria pero esta vez aplico un round
-SELECT CategoryID, round (avg(Price))AS promedio from Products --- seleccionamos
-where CategoryID is not null --- filtramos
-Group By CategoryID  --- todo lo que tenga el mismo id de categoria se agrupara se sumara y dividira
-having avg(price) > 21 ---aplicamos filtro con having sobre un grupo 
+SELECT CategoryID, round (avg(Price))AS promedio from Products 
+where CategoryID is not null
+Group By CategoryID  
+having avg(price) > 21 
+--- la consulta anterior dice lo siguiente 
+--- seleccioname todas las categorias sumame y promediame todos los precios de la tabla producto y luego
+--- redondealos
+--- todo esto donde el id de la categoria no sea nulo 
+--- y luego agrupamelo por el id de la categoria
+--- y a esa consulta 
 
 ---- con where no podemos hacer filtrado de grupos
----- asi como usamos where para filtrar grupos 
----- usamos HAVING PARA FILTRAR GRUPOS
+---- asi como usamos where para filtrar registros 
+---- usamos HAVING PARA FILTRAR GRUPOS, es por esto que uso having para filtrar having avg(price) > 21 
+---- porque avg(price) es el resultado de una funcion de agregacion
 
 
 ---- ahora vamos a seleccionar el registro de ventas
